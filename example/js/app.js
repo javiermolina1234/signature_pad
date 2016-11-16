@@ -20,7 +20,7 @@ function resizeCanvas() {
 window.onresize = resizeCanvas;
 resizeCanvas();
 
-signaturePad = new SignaturePad(canvas);
+signaturePad = new SignaturePad(canvas, {backgroundColor: "rgb(255,255,255)"});
 
 clearButton.addEventListener("click", function (event) {
     signaturePad.clear();
